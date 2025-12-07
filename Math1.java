@@ -1,0 +1,36 @@
+class Calculator {
+    int add(int a, int b){
+        return a + b;
+    }
+    int subtract(int a, int b){
+        return a - b;
+
+    }
+    int multiply(int a, int b){
+        return a * b;
+
+    }
+    int divide(int a, int b){
+
+        return a / b;
+
+    }
+
+    int modulo(int a, int b){
+        return a % b;
+    }
+
+}
+
+public class Math1 {
+    public static void main(String[] args) {
+        
+        Calculator calc = new Calculator();
+        System.out.println(calc.add(1,3));
+        System.out.println(calc.subtract(1,3));
+        System.out.println(calc.multiply(1,3));
+        System.out.println(calc.divide(1,3));
+        System.out.println(calc.modulo(1,3));
+    }
+    
+}

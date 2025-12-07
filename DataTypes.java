@@ -12,7 +12,9 @@ public class DataTypes {
     DataTypeExamples dt = new DataTypeExamples();
 
     System.out.println("My INT:" + dt.myInt);
-
-
-    }
+    System.out.print("MyChar: "+dt.myChar);
+    System.out.print("Mydouble"+dt.myDouble);  
+    System.out.print("Myboolean: "+dt.myBoolean);
+   
+}
 }
