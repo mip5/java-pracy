@@ -12,7 +12,7 @@ public class Tiktac {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
 
-                int player = rand.nextInt(2); // 0 = O, 1 = X
+                int player = rand.nextInt(2); 
 
                 if (x > o) {
                     player = 0;
@@ -40,23 +40,23 @@ public class Tiktac {
 
         for (int i = 0; i < 3; i++) {
             if (board[i][0] == board[i][1] && board[i][1] == board[i][2]) {
-                System.out.println(board[i][0] + " wins!");
+                System.out.println(board[i][0] + " wins");
                 return;
             }
 
             if (board[0][i] == board[1][i] && board[1][i] == board[2][i]) {
-                System.out.println(board[0][i] + " wins!");
+                System.out.println(board[0][i] + " wins");
                 return;
             }
         }
 
         if (board[0][0] == board[1][1] && board[1][1] == board[2][2]) {
-            System.out.println(board[0][0] + " wins!");
+            System.out.println(board[0][0] + " wins");
             return;
         }
 
         if (board[0][2] == board[1][1] && board[1][1] == board[2][0]) {
-            System.out.println(board[0][2] + " wins!");
+            System.out.println(board[0][2] + " wins");
             return;
         }
         System.out.println("Draw");
