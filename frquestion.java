@@ -21,7 +21,11 @@ class Sign {
 
     public int numberOfLines() {
         int length = message.length();
-        return (length + width - 1) / width;
+        int lines = length / width;
+        if (length % width != 0) {
+            lines++;
+        }
+        System.out.println(lines);
     }
 
     public String getLines() {
@@ -40,6 +44,6 @@ class Sign {
                 result += ";";
             }
         }
-        return result;
+        System.out.println(result);
     }
 }
