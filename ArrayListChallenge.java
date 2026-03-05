@@ -32,13 +32,13 @@ public class ArrayListChallenge {
         String name = "";
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a name to add to the guest list (type 'exit' to finish):");
-        while (!name.equalsIgnoreCase("exit"))
+        while (!name.equals("exit"))
         {       name = input.nextLine();
                 if (guestList.contains(name))
                 {
                     System.out.println("This person is invited!");
                 }
-            if (!name.equalsIgnoreCase("exit") && !guestList.contains(name))        {
+            if (!name.equals("exit") && !guestList.contains(name))        {
                 guestList.add(name);
             }
         }   
@@ -52,14 +52,14 @@ public class ArrayListChallenge {
     // continue until you type exit
         ArrayList<String> groceryList = new ArrayList<String>();
         String food = "";
-        System.out.println("Enter a food item to add to the grocery list (type 'exit' to finish):");
-        while (!food.equalsIgnoreCase("exit"))
+        System.out.println("Enter a food item to add to the grocery list type 'exit' to finish:");
+        while (!food.equals("exit"))
         {       food = input.nextLine();
                 if (groceryList.contains(food))
                 {
                     System.out.println("Index of " + food + ": " + groceryList.indexOf(food));
                 }
-            if (!food.equalsIgnoreCase("exit") && !groceryList.contains(food))        {
+            if (!food.equals("exit") && !groceryList.contains(food))        {
                 groceryList.add(food);
                 System.out.println("Not Found");
                 System.out.println(food + " added to the grocery list.");
